@@ -23,7 +23,7 @@ To build a model for detecting frauds, we need to find the strange patterns of f
 - Xgboost version: 0.90 
 
 ### Content:
-###### details seen in Fraud detection_final.py
+###### details seen in [Fraud detection](https://github.com/MengdieZhang/Transaction-Fraud-detection/blob/master/Fraud%20detection_final.ipynb)
 
 ##### A) Data Source
 
