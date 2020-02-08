@@ -11,6 +11,8 @@ For many business owners, how to protect their company from fraudulent activity 
 
 To build a model for detecting frauds, we need to find the strange patterns of frauds in the data that are against the norm. Anomaly detection is the study of applying different statistical and machine learning techniques to these areas to identify the suspicions by differing significantly from the majority of data.
 
+
+
 ### Environment 
 - Python version: 3.7.4 
 - Numpy version: 1.16.4
@@ -21,13 +23,21 @@ To build a model for detecting frauds, we need to find the strange patterns of f
 - Xgboost version: 0.90 
 
 ### Content:
-###### seen in Fraud detection_final.py
+###### details seen in Fraud detection_final.py
 
-##### A) Import Data
-##### B) Proprocessing
-##### C) Model Selection
-##### D) Hyperparameter Optimization
-##### E) Feature engineering
-##### F) Results
+##### A) Data Source
 
-### Summary
+##### B) Model Selection
+
+##### C) Feature engineering & Model Improvement
+
+##### D) Results and discussion
+In this project, the feature engineering is an important part of the job. After EDA, cleaning&wrangling data, three different models were used to fit the data. And LightGBM is choosen as the final model.
+
+After optimising several important parameters and conducting feature engineering, the AUC score for test data reached 0.961 with a very low false positive rate as 0.00116.
+
+While there still have some issues need to be discussed:
+
+- The balance of fn and fp
+- Reduce the features
+- Dataset without identity file information
