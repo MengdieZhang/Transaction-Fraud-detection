@@ -38,16 +38,16 @@ After optimising several important parameters and conducting feature engineering
 
 While there still have some issues need to be discussed:
 
-- The balance of fn and fp
+###### 1)The balance of fn and fp
 The issue of this problem: According to the confusion matrix, the recall is little low just 0.5786, which means only 57.86% of total real frauds have been detected in this model. To deal with this problem, we can reduce our threshold to 0.4. The balance of fn and fp is important. If the company prefers to reduce money loss from detection, so the fn should be low. If the company wants improve customer experience, so the fp should be reduced.
 
 when threshold dropped to 0.2, the recall score is increased to 0.6826, while the precision decreased with a higher false positive rate
 
 
-- Reduce the features
+###### 2)Reduce the features
 The feature_importance in this project is measured by the numbers of times the feature is used in a model to split. We will selected top 100 features as selected feature. With only top 100 features, the computation time of this model is much faster with a little lower AUC score.
 
-- Dataset without identity file information
+###### 3)Dataset without identity file information
 
 Since the model has a very high AUC score before feature engineering, it may cause by including the file named "train_identity" which contains the information from collected by Vesta’s fraud protection system and digital security partners. Thus, we can fit this model with the dataset only from "train_transaction" file to check the performance.
 
